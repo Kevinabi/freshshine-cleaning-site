@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshShine Cleaning & Car Wash</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h1>FreshShine</h1>
+      <div>
+        <a href="#services">Services</a>
+        <a href="#enquiry">Enquiry</a>
+        <a href="#booking">Book Slot</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <h2>House Cleaning & Car Wash Services</h2>
+      <p>Book reliable cleaning and car wash services with confirmed time slots.</p>
+      <a class="btn" href="#booking">Book a Slot</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="services" class="services">
+      <h2>Services</h2>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>House Cleaning</h3>
+          <p>Full home cleaning, kitchen cleaning, bathroom cleaning, and deep cleaning.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Car Wash</h3>
+          <p>Exterior wash, interior vacuuming, dashboard cleaning, and polish options.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>Office Cleaning</h3>
+          <p>Regular office cleaning, dusting, floor cleaning, and washroom cleaning.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry" class="panel">
+      <h2>Send an Enquiry</h2>
+      <p>Use this form for service details, address, phone number, and special requests.</p>
+
+      <!-- Option A: Google Form Embed -->
+      <iframe
+        class="form-frame"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSebxKUhmSb52EevY2cRlJchjb8-j6JayJSp5rherul1ivD63Q/viewform?usp=header"
+        loading="lazy">
+      </iframe>
+
+      <!-- Option B: Tally Embed. Use this instead of Google Form if you prefer Tally. -->
+      <!--
+      <iframe
+        class="form-frame"
+        data-tally-src="https://tally.so/embed/YOUR_TALLY_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1"
+        loading="lazy">
+      </iframe>
+      <script src="https://tally.so/widgets/embed.js"></script>
+      -->
+    </section>
+
+    <section id="booking" class="panel">
+      <h2>Book a Confirmed Slot</h2>
+      <p>Select an available date and time. Your will receive the booking and calendar reminder.</p>
+
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/kevinabishek41/house-wash"
+        style="min-width:320px;height:760px;">
+      </div>
+    </section>
+
+    <section class="contact-strip">
+      <h2>Need Help Quickly?</h2>
+      <a id="whatsappButton" class="btn" href="#">Chat on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>FreshShine Cleaning & Car Wash</p>
+  </footer>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="script.js"></script>
+</body>
+</html>
