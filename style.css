@@ -196,3 +196,209 @@ footer {
     display: inline-block;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+.hero {
+  min-height: 82vh;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  font-size: 24px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+nav div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  white-space: nowrap;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.hero-content {
+  margin-top: 100px;
+  max-width: 720px;
+}
+
+.hero-content h2 {
+  font-size: clamp(34px, 9vw, 64px);
+  line-height: 1.05;
+  margin: 0 0 16px;
+  word-break: normal;
+}
+
+.hero-content p {
+  font-size: clamp(16px, 4vw, 20px);
+  line-height: 1.5;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  padding: 40px 16px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-card,
+.panel {
+  min-width: 0;
+}
+
+.form-frame {
+  width: 100%;
+  height: 760px;
+  min-height: 760px;
+  border: 0;
+}
+
+.calendly-inline-widget {
+  width: 100% !important;
+  min-width: 0 !important;
+  height: 760px !important;
+}
+
+.contact-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact-strip h2 {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: auto;
+    padding: 16px;
+    padding-bottom: 80px;
+  }
+
+  nav {
+    align-items: flex-start;
+  }
+
+  nav h1 {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  nav div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  nav a {
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  .hero-content {
+    margin-top: 70px;
+  }
+
+  .hero-content h2 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn {
+    display: inline-block;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services h2,
+  .panel h2 {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  .panel {
+    padding: 20px 14px;
+    margin-top: 40px;
+  }
+
+  .form-frame {
+    height: 680px;
+    min-height: 680px;
+  }
+
+  .calendly-inline-widget {
+    height: 720px !important;
+  }
+
+  .contact-strip {
+    display: block;
+    padding: 24px 18px;
+  }
+
+  .contact-strip .btn {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  nav div {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 32px;
+  }
+
+  .form-frame {
+    height: 620px;
+    min-height: 620px;
+  }
+
+  .calendly-inline-widget {
+    height: 680px !important;
+  }
+}
